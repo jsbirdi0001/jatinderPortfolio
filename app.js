@@ -1,4 +1,4 @@
-var express = require("express"), app = express(), nodemailer = require('nodemailer');
+var express = require("express"), app = express(), nodemailer = require('nodemailer'), secret = require('./views/partials/js');
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 var bodyParser = require('body-parser');
@@ -18,7 +18,7 @@ app.post('/contact', function (req, res) {
         service: 'gmail',
         auth: {
             user: 'jatinderbirditech@gmail.com',
-            pass: '#programmer'
+            pass: secret.pass
         }
     });
     var mailOptions = {
