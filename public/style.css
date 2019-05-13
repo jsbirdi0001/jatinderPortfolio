@@ -1,0 +1,321 @@
+/* Adding Animation to the Heading Jatinder Name */
+
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+/* BODY */
+
+/* JUMP */
+.jumpHead {
+  cursor: default;
+  display: block;
+  text-align: center;
+}
+
+.jumpHead span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.9s ease infinite alternate;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.jumpHead span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+.jumpHead span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.jumpHead span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+.jumpHead span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.jumpHead span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.jumpHead span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.jumpHead span:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+}
+
+.jumpHead span:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+}
+
+.jumpHead span:nth-child(10) {
+  -webkit-animation-delay: 1s;
+}
+
+.jumpHead span:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+}
+
+.jumpHead span:nth-child(12) {
+  -webkit-animation-delay: 1.2s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 1.3s;
+}
+
+.jumpHead span:nth-child(14) {
+  -webkit-animation-delay: 1.4s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -10px;
+  }
+}
+
+/* Adding Animation to the Heading Jatinder Name */
+
+.bg-gradient{
+  background: linear-gradient(to bottom right, red, dodgerblue);
+}
+
+body{
+  border: 1px solid gray;
+  border-top: 10px solid dodgerblue;
+  border-bottom: 10px solid green;
+  box-shadow: inset 0 0 30px 10px dodgerblue;
+}
+.education-field{
+  cursor: pointer;
+}
+.education-field:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.link-block-black{
+  color:black;
+}
+.link-block-black:hover{
+  color: white;
+  text-decoration: none;
+}
+.project p{
+  color: gray;
+}
+.project:hover p{
+  color: gray;
+}
+.project-shadow{
+  transition: 0.3s;
+}
+.project-shadow:hover{
+  box-shadow: 0 0 10px 2px gray;
+  transform: scale(1.05);
+}
+.header-btn .link-block button:hover{
+  background: linear-gradient(to bottom right, tomato, dodgerblue);
+  color: white;
+}
+.font-gugi{
+  font-family:'Gugi',cursive;
+}
+.link-block{
+  color: black;
+}
+.link-block:hover{
+  color: white;
+  text-decoration: none;
+}
+.circular{
+  border-radius: 30px;
+  border: 5px solid #ffff00;
+  border-left: none;
+  border-right:none;
+}
+
+.circular1{
+  border-radius: 50% 50%;
+  overflow: hidden;
+  border: 5px groove lightblue;
+}
+
+.bg-photo{
+  background: #1c92d2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.boy-overlap{
+  margin-top: -80px;
+}
+.list-skills {
+  list-style-type: none;
+  padding: 0;
+
+}
+.list-skills li {
+  padding: 0 0 0 25px;
+  position: relative;
+  margin-bottom: 5px;
+
+}
+ul li:before {
+  position: absolute;
+  left: 5px;
+  content: "\2713";
+  color: green;
+  font-weight:bold;
+}
+.header-btn button:hover{
+  background: linear-gradient(to bottom right, tomato, dodgerblue);
+  color: white;
+}
+.header-btn button:hover .link-block{
+  color:white;
+}
+
+@media screen and (max-width: 760px) {
+  .jumpHead span {
+    font-size: 35px;
+  }
+  .boy-overlap{
+    margin-top: -60px;
+  }
+  .btns, .contact{
+    text-align: center;
+  }
+  .contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .head-prime{
+    font-family: 'Gugi', cursive;
+  }
+  .header-btn button{
+    border:none;
+    font-family: 'Gugi', cursive;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .header{
+   /* background: #ff9966;  /* fallback for old browsers 
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  */
+    background: url("https://ak9.picdn.net/shutterstock/videos/5227409/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h3{
+    color: white;
+  }
+}
+
+
+@media screen and (min-width: 761px) {
+  .flex-custom {
+    justify-content: space-around;
+  }
+  .container-justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .head-prime{
+    font-family: 'Gugi', cursive;
+  }
+  .header-btn button{
+    border:none;
+    font-family: 'Gugi', cursive;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header-btn button:hover{
+    color: blue;
+  }
+  .header{
+   /* background: #ff9966;   fallback for old browsers 
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  */
+    background: url("https://ak9.picdn.net/shutterstock/videos/5227409/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h3{
+    color: white;
+  }
+
+}
+
+body{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.social:hover{
+  transform: scale(1.2);
+}
+.footer:hover{
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+

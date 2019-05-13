@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<br>
+<div class="container-fluid col-md-9 col-11 p-0" style="margin: 0 auto">
+    <div data-aos="zoom-out-down" data-aos-duration="2000">
+        <h1 class="font-gugi text-center">C O N T A C T  </h1>
+        <hr class="text-center bg-dark w-75">
+        <form action="/contact" id="contact-form" method="post" role="form" class="form-group">
+          <fieldset>
+            <label for="name">Name &#42;</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required="required" class="form-control">
+            <label for="email">Email &#42;</label>
+            <input id="email" name="email" type="text" placeholder="Your email" required="required" class="form-control">
+            <label for="message">Message &#42;</label>
+            <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required" class="form-control"></textarea>
+            <button type="submit" class="btn btn-primary m-3">Submit</button>
+          </fieldset>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer %>

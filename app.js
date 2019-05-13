@@ -1,0 +1,43 @@
+var express = require("express"), app = express(), nodemailer = require('nodemailer');
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.get("/", function (req, res) {
+    res.render("index");
+});
+app.get("/projects", function (req, res) {
+    res.render("projects");
+});
+app.get("/contact", function (req, res) {
+    res.render("contact");
+});
+// POST route from contact form
+app.post('/contact', function (req, res) {
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'jatinderbirditech@gmail.com',
+            pass: '#programmer'
+        }
+    });
+    var mailOptions = {
+        from: req.body.email,
+        to: 'jatinderbirditech@gmail.com',
+        subject: 'Contace from Portfolio',
+        html: req.body.name + " (" + req.body.email + ") says: " + req.body.message
+    };
+    transporter.sendMail(mailOptions, function (err, info) {
+        if (err) {
+            console.log(err);
+            res.send("<h1 style='text-align:center'> Error Send Mail </h1> <a href='/'><button>Go Back</button></a>");
+        }
+        else {
+            console.log(info);
+            res.render("mailSent");
+        }
+    });
+});
+app.listen(process.env.PORT, process.env.IP, function () {
+    console.log("Application has been started");
+});
