@@ -189,7 +189,7 @@ ul li:before {
 
 @media screen and (max-width: 760px) {
   .jumpHead span {
-    font-size: 35px;
+    font-size: 30px;
   }
   .boy-overlap{
     margin-top: -60px;
@@ -207,7 +207,7 @@ ul li:before {
   .header-btn button{
     border:none;
     font-family: 'Gugi', cursive;
-    padding: 10px;
+    padding: 7px;
     border-radius: 3px;
     background-color: rgba(255,255,255,0.7);
     margin-left: 5px;
