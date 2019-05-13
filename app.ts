@@ -48,6 +48,12 @@ app.post('/contact', function (req, res) {
     });
 });
     
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Application has been started");
-})
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("Application has been started");
+// });
+
+const port=process.env.PORT || 3000;
+
+app.listen(port,() => {
+console.log(`Server running at port `+port);
+});
