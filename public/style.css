@@ -188,6 +188,9 @@ ul li:before {
 }
 
 @media screen and (max-width: 760px) {
+  .mobile-edu-container{
+    display: block;
+  }
   .jumpHead span {
     font-size: 30px;
   }
@@ -230,6 +233,7 @@ ul li:before {
 
 
 @media screen and (min-width: 761px) {
+
   .flex-custom {
     justify-content: space-around;
   }
