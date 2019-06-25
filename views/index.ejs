@@ -183,7 +183,7 @@
         <div>
             <div class="col-12 flex btn-asg py-3  education-field">
                 <div>
-                    <span class="badge-lg badge-primary p-1 my-auto">Aug 2018 - Mar 2019 </span><span class="font-weight-bold lead mx-2 mobile-edu-container">Security Guard</span><div class="p-2"> <i>ASG Security</i></div>
+                    <span class="badge-lg badge-primary p-1 my-auto">Aug 2018 - Mar 2019 </span><span class="font-weight-bold lead mx-2 mobile-edu-container ">Security Guard</span><div class="p-2"> <i>ASG Security</i></div>
                 </div>
                 <div>
                     <span class="btn btn-primary ">+</span>
@@ -206,6 +206,40 @@
             </div>
         </div>
         
+        <div>
+            <div class="col-12 flex btn-full py-3  education-field">
+                <div>
+                    <span class="badge-lg badge-primary p-1 my-auto">Apr 2016 - Mar 2017 </span><span class="font-weight-bold lead mx-2 mobile-edu-container ">Full Stack Developer</span><div class="p-2"> <i>ASG Security</i></div>
+                </div>
+                <div>
+                    <span class="btn btn-primary ">+</span>
+                </div>
+            </div>
+            <div class="col-12" id="open-full" style="display:none">
+                
+                What I've gained -
+                <ul class="list-skills text-dark" style="font-weight: 200; text-aligh: left; font-size: 1.1rem">
+                    <li>
+                       Engaged with SDLC (Software Development Life Cycle)
+                    </li>
+                    <li>
+                        Worked with AWS Cloud9 for Integrated Development Environment (IDE).
+                    </li>
+                    <li>
+                        Designed database in MongoDB and deployed on Heroku Server.
+                    </li>
+                    <li>
+                        Worked in an agile environment for product releases and development
+                    </li>
+                    <li>
+                        Worked with team members to produce creative, efficient solutions
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
     </div>
 </div>
 
@@ -221,6 +255,9 @@
     });
     $(".btn-asg").on("click",function(){
         $("#open-asg").slideToggle();
+    });
+    $(".btn-full").on("click",function(){
+        $("#open-full").slideToggle();
     });
 </script>
 <% include ./partials/footer %>
