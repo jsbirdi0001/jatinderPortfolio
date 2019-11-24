@@ -18,13 +18,13 @@ app.post('/contact', function (req, res) {
         service: 'gmail',
         auth: {
             user: 'jatinderbirditech@gmail.com',
-            pass: secret.pass
+            pass: 'Kiranbirdi1@'
         }
     });
     var mailOptions = {
         from: req.body.email,
         to: 'jatinderbirditech@gmail.com',
-        subject: 'Contace from Portfolio',
+        subject: 'Contact from Portfolio',
         html: req.body.name + " (" + req.body.email + ") says: " + req.body.message
     };
     transporter.sendMail(mailOptions, function (err, info) {
@@ -41,7 +41,7 @@ app.post('/contact', function (req, res) {
 // app.listen(process.env.PORT, process.env.IP, function(){
 //     console.log("Application has been started");
 // });
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.listen(port, function () {
     console.log("Server running at port " + port);
 });

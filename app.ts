@@ -26,14 +26,14 @@ app.post('/contact', function (req, res) {
      service: 'gmail',
      auth: {
             user: 'jatinderbirditech@gmail.com',
-            pass: secret.pass
+            pass: 'Kiranbirdi1@'
         }
     });
     
     const mailOptions = {
         from: req.body.email,
         to: 'jatinderbirditech@gmail.com',
-        subject: 'Contace from Portfolio',
+        subject: 'Contact from Portfolio',
         html: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
     
@@ -53,8 +53,8 @@ app.post('/contact', function (req, res) {
 //     console.log("Application has been started");
 // });
 
-const port=process.env.PORT || 3000;
+const port=process.env.PORT || 8080;
 
 app.listen(port,() => {
-console.log(`Server running at port `+port);
+console.log(`Server running at port ${port}`);
 });
