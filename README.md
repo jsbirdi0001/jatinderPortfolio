@@ -6,9 +6,12 @@
  ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to AWS Cloud9!
-
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
+Created Portfolio which includes my personal information, projects and blog.
+I used MEAN Stack to create this.
+In order to create this application, I've used...
+ - HTML5, CSS3, JavaScript, jQuery, AOS and Bootstrap for front end
+ - Express.js for routing
+ - Node.js and npm for back-end development
+ - AWS Cloud9 for development and heroku for deployment
+ 
+ Thanks
