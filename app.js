@@ -30,7 +30,7 @@ app.post('/contact', function (req, res) {
     transporter.sendMail(mailOptions, function (err, info) {
         if (err) {
             console.log(err);
-            res.send("<h1 style='text-align:center'> Error Send Mail </h1> <a href='/'><button>Go Back</button></a>");
+            res.render("mailSent");
         }
         else {
             console.log(info);
