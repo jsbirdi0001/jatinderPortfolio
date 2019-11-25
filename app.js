@@ -18,7 +18,7 @@ app.post('/contact', function (req, res) {
         service: 'gmail',
         auth: {
             user: 'jatinderbirditech@gmail.com',
-            pass: 'Kiranbirdi1@'
+            pass: secret.pass
         }
     });
     var mailOptions = {
