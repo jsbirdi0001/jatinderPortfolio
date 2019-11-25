@@ -222,9 +222,10 @@ ul li:before {
   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 
   background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
   */
-    background: url("https://ak9.picdn.net/shutterstock/videos/5227409/thumb/1.jpg");
+    background: url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_960_720.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   h3{
     color: white;
@@ -262,7 +263,7 @@ ul li:before {
   background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 
   background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
   */
-    background: url("https://ak9.picdn.net/shutterstock/videos/5227409/thumb/1.jpg");
+    background: url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_960_720.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -281,6 +282,40 @@ body{
     margin: 0 auto;
 }
 
+
+/* Image Scroll for project page */
+.image-scroll{
+  height: 200px; 
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.image-scroll img{
+  width: 100%;
+  position:absolute;
+  transition: 0.4s;
+  animation: imageAnim 6s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.image-scroll-back img{
+  animation-name: imageAnimBack;
+}
+@keyframes imageAnim{
+  0%, 100%{
+    top: 0;
+  }
+  50%{
+    top: -100%;
+  }
+}
+@keyframes imageAnimBack{
+  0%, 100%{
+    top: -130%;
+  }
+  50%{
+    top: 0;
+  }
+}
 
 @keyframes fadein {
     from {
