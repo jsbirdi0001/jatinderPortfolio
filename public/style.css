@@ -186,6 +186,9 @@ ul li:before {
 .header-btn button:hover .link-block{
   color:white;
 }
+strong{
+  font-weight: 700;
+}
 
 @media screen and (max-width: 760px) {
   .mobile-edu-container{
