@@ -5,7 +5,7 @@ var express = require("express"),
     http = require("http");
 
 setInterval(function() {
-    http.get("http://<your app name>.herokuapp.com");
+    http.get("jatinderbirdi.com");
 }, 300000); 
     
 app.set("view engine", "ejs");
