@@ -1,4 +1,7 @@
-var express = require("express"), app = express(), nodemailer = require('nodemailer'), secret = require('./views/partials/js');
+var express = require("express"), app = express(), nodemailer = require('nodemailer'), secret = require('./views/partials/js'), http = require("http");
+setInterval(function () {
+    http.get("http://<your app name>.herokuapp.com");
+}, 300000);
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 var bodyParser = require('body-parser');
@@ -18,7 +21,7 @@ app.post('/contact', function (req, res) {
         service: 'gmail',
         auth: {
             user: 'jatinderbirditech@gmail.com',
-            pass: secret.pass
+            pass: 'Kiranbirdi1@'
         }
     });
     var mailOptions = {
@@ -30,7 +33,7 @@ app.post('/contact', function (req, res) {
     transporter.sendMail(mailOptions, function (err, info) {
         if (err) {
             console.log(err);
-            res.render("mailSent");
+            res.send("<h1 style='text-align:center'> Error Send Mail </h1> <a href='/'><button>Go Back</button></a>");
         }
         else {
             console.log(info);
