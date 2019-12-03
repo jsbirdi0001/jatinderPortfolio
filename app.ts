@@ -4,9 +4,6 @@ var express = require("express"),
     secret = require('./views/partials/js'),
     http = require("http");
 
-setInterval(function() {
-    http.get("jatinderbirdi.com");
-}, 300000); 
     
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
