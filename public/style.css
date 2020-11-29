@@ -293,6 +293,9 @@ body{
   overflow: hidden;
   transition: 0.4s;
 }
+.image-scroll-lg{
+  height: 400px;
+}
 .image-scroll img{
   width: 100%;
   position:absolute;
@@ -303,12 +306,25 @@ body{
 .image-scroll-back img{
   animation-name: imageAnimBack;
 }
+#informa{
+  animation-name: imageAnimBack2;
+}
+
 @keyframes imageAnim{
   0%, 100%{
     top: 0;
   }
   50%{
     top: -100%;
+  }
+}
+
+@keyframes imageAnimBack2{
+  0%, 100%{
+    top: -130%;
+  }
+  50%{
+    top: 0;
   }
 }
 @keyframes imageAnimBack{
@@ -362,3 +378,15 @@ body{
   color: black;
 }
 
+body{
+  /*transform: rotate3d(1, 1, 0, 20deg); */
+  margin: 0 auto;
+  box-shadow: 0 0 40px 20px gray;
+}
+@media screen and (max-width: 760px) {
+  body{
+    transform: rotate3d(0, 0, 0, 10deg);
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+}
